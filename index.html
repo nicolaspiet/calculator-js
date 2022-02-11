@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/568ff93695.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="gradient">
+        <div class="background">
+            <div class="expression">
+                <p class="result" id="result"></p>
+            </div>
+            <table>
+                <tr>
+                    <td><button onclick="erase('CE')"style="width: 124px" class="button especial">CE</button></td>
+                    <td><button onclick="erase('Backspace')" class="button"><i class="fas fa-backspace"></i></button></td>
+                    <td><button onclick="insert('/')" class="button especial"><i class="fa fa-divide"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('7')" class="button">7</button></td>
+                    <td><button onclick="insert('8')" class="button">8</button></td>
+                    <td><button onclick="insert('9')" class="button">9</button></td>
+                    <td><button onclick="insert('*')" class="button especial"><i class="ixi fa fa-asterisk"></i></button></td>
+                </tr>
+                <tr>    
+                    <td><button onclick="insert('4')" class="button">4</button></td>
+                    <td><button onclick="insert('5')" class="button">5</button></td>
+                    <td><button onclick="insert('6')" class="button">6</button></td>
+                    <td><button onclick="insert('-')" class="button especial">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('1')" class="button">1</button></td>
+                    <td><button onclick="insert('2')" class="button">2</button></td>
+                    <td><button onclick="insert('3')" class="button">3</button></td>
+                    <td><button onclick="insert('+')" class="button especial">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('0')" class="button">0</button></td>
+                    <td><button onclick="insert('.')" class="button">.</button></td>
+                    <td><button onclick="calculate()" style="width: 124px" class="button">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
